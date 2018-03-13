@@ -31,7 +31,7 @@ print("Longitude: ",lng)
 
 latLng = str(lat)+','+str(lng)
 urlPlaceSearch = serviceurlPlaceSearch + urllib.parse.urlencode({'location':latLng,'radius':500,'type':'gas_station',
-                                                                'key':'AIzaSyBecZGXzfIYZYX8zkC_SwuU4t_8gRBO9uA'})
+                                                                'key':'#####'})
 
 dataGasStation = urllib.request.urlopen(urlPlaceSearch,context=ctx)
 dataGasStation = dataGasStation.read().decode()
